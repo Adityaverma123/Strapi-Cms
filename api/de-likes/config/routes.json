@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/de-likes",
+      "handler": "de-likes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/de-likes/count",
+      "handler": "de-likes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/de-likes/:id",
+      "handler": "de-likes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/de-likes",
+      "handler": "de-likes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/de-likes/:id",
+      "handler": "de-likes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/de-likes/:id",
+      "handler": "de-likes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "de_likes",
+  "info": {
+    "name": "DELikes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "likes": {
+      "type": "integer"
+    }
+  }
+}

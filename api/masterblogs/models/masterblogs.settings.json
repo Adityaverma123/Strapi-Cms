@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "masterblogs",
+  "info": {
+    "name": "masterblogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "heading": {
+      "type": "string"
+    },
+    "blog_text": {
+      "type": "richtext"
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
